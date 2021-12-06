@@ -28,6 +28,7 @@ body {
   background-color: black;
   opacity: 50%;
   position: fixed;
+  z-index: 4;
   top: 0;
   height: 62px;
   width: 100%;
@@ -44,6 +45,30 @@ body {
 }
 .nav .nav-links {
   display: none;
+}
+.nav #navLinks {
+  position: absolute;
+  right: 0;
+  top: 62px;
+  height: 100vh;
+  width: 40%;
+  background-color: inherit;
+  color: white;
+  display: none;
+}
+.nav #navLinks div {
+  padding: 10px;
+  cursor: pointer;
+  color: white;
+}
+.nav #navLinks .icons {
+  margin-top: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
 .page-top {
@@ -144,15 +169,15 @@ body {
   margin-right: 12px;
   margin-bottom: 50px;
 }
-.container .main-text .main-text-heading h2 {
+.container .main-text .main-photo {
+  display: none;
+}
+.container .main-text .main-text-heading {
   font-size: 24px;
   font-weight: 400;
   margin-bottom: 20px;
 }
-.container .main-text .main-text-heading img {
-  display: none;
-}
-.container .main-text p {
+.container .main-text .main-text-p {
   font-size: 14px;
   line-height: 16.41px;
   font-weight: 300;
@@ -385,7 +410,7 @@ body {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
             justify-content: space-between;
-    width: 100%;
+    width: 80vw;
   }
   .footer .footer-links {
     max-width: 30%;
@@ -420,7 +445,7 @@ body {
     padding-top: 30px;
     max-width: 70%;
   }
-  .container .main-text img {
+  .container .main-text .main-photo {
     display: block;
     margin-right: 95px;
   }
@@ -441,4 +466,5 @@ body {
     font-size: 36px;
   }
 }
+
 /*# sourceMappingURL=mobile.css.map */

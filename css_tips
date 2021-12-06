@@ -1,0 +1,22 @@
+$font-weights: ( "regular" : 400, "medium": 500);  font-weight: map-get($font-weights, bold);
+@function weight($weight-name) { @return map-get($font-weights, $weight-name);}
+To use mixin: @include mixinname;
+@mixin flexcenter {display:flex,}
+mixins can take arguments like func
+creating light and dark theme!!
+===========================
+@mixin theme($light-theme: true) {
+@if $light-theme{
+background: lighten($primary-color, 100%);
+color: darken(text-color, 100%);
+}
+}
+This is used with primary text color as white and background as black
+you also need to create a light class
+.light {
+@include theme($light-theme: true); }
+=========================
+yoou can @extend, this will add all the same styles of a specific class to another class and then you can add your changes
+.class1{ background: blue;}
+.class2{ @extend class1; color: white;}
+the class2 will have both the background color and the text color!!

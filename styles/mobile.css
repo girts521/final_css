@@ -16,7 +16,7 @@ nav {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: black;
-  opacity: 70%;
+  opacity: 40%;
   position: fixed;
   z-index: 4;
   top: 0;
@@ -37,8 +37,31 @@ nav .burger {
   padding: 5px;
   cursor: pointer;
 }
+@media screen and (min-width: 768px) {
+  nav .burger {
+    display: none;
+  }
+}
 nav .nav-links {
   display: none;
+}
+@media screen and (min-width: 768px) {
+  nav .nav-links {
+    color: white;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    margin-right: 36px;
+    font-size: 12px;
+    font-weight: 400;
+  }
+  nav .nav-links :not(:last-child) {
+    margin-right: 29px;
+  }
 }
 nav #navLinks {
   position: absolute;
@@ -63,6 +86,11 @@ nav .icons {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+}
+@media screen and (min-width: 768px) {
+  nav .icons {
+    margin: 0;
+  }
 }
 
 body {

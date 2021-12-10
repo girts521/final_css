@@ -17,14 +17,20 @@ time, mark, audio, video {
 	font-size: 100%;
 	font: inherit;
 	vertical-align: baseline;
+	box-sizing: border-box;
+    outline: 0;
 }
 /* HTML5 display-role reset for older browsers */
 article, aside, details, figcaption, figure, 
 footer, header, hgroup, menu, nav, section {
 	display: block;
 }
-body {
+html,body {
+	background: white;
+	color: black;
 	line-height: 1;
+	width: 100%;
+    height: 100%;
 }
 ol, ul {
 	list-style: none;

@@ -5,8 +5,8 @@
     flex-direction: $direction;
 }
 
-@mixin background-image-dark($imgUrl){
-    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url($imgUrl);
+@mixin background-image-dark($imgUrls){
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url($imgUrls);
     background-repeat: no-repeat;
     background-size: cover;
 }

@@ -3,6 +3,14 @@ const navLinks = document.querySelector('.nav-links');
 const nav = document.querySelector('nav');
 const header = document.querySelector('header');
 
+window.addEventListener('load', () => {
+    if (window.innerWidth < 768) {
+        navLinks.setAttribute('id', 'navLinks')
+    } else {
+        navLinks.removeAttribute('id', 'navLinks')
+    }
+    console.log("hello")
+});
 
 window.addEventListener('resize', () => {
     if (window.innerWidth < 768) {

@@ -3,6 +3,29 @@
 
 @media screen and(min-width:768px) {
 
+    .heading-container {
+        text-align: left;
+        align-items: flex-start;
 
-    
+        .heading {
+            font-size: map-get($tablet, "Lhead" );
+        }
+
+        .heading-text {
+            font-size: map-get($tablet, "p" );
+            line-height: map-get($tablet, "lineHeightP");
+        }
+    }
+
+    main {
+
+        .main-text{
+            text-align: center;
+            margin-left: 12px;
+            margin-right: 12px;
+            margin-bottom: 50px;
+        }
+    }
+
+
 }

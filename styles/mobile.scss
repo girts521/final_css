@@ -98,7 +98,7 @@ main {
         .main-p {
             font-size: map-get($mobile, "p");
             line-height: map-get($mobile, "lineHeightP");
-            font-weight: wight("regular");
+            font-weight: weight("regular");
         }
     }
 
@@ -127,43 +127,116 @@ main {
                     margin-bottom: 30px;
                 }
 
-                .skill-subheading {}
+                .skill-subheading {
+                    font-size:map-get($mobile, "Shead");
+                    font-weight: wight("bold");
+                }
 
-                .skill-text {}
+                .skill-text {
+                    font-size: map-get($mobile, "Sp");
+                    font-weight: wight("small");
+                    line-height: map-get($mobile, "lineHeightP");
+                }
             }
         }
     }
 
     .projects-container {
 
-        .projects-heading {}
+        @include flexCenter(column);
+        margin-left: 12px;
+        margin-right: 12px;
+
+        .projects-heading {
+            font-size: map-get($mobile, "head");
+            font-weight: weight("regular");
+            margin-bottom: 20px;
+        }
 
         .project-box {
 
             .project {
 
-                .project-img {}
+                .project-img {
+                    img {
+                        margin-bottom: 11px;
+                        width: 100%;
+                    }
+                }
 
-                .project-name {}
+                .project-name {
+                    font-weight: weight("bold");
+                    font-size: map-get($mobile, "Shead");
+                }
+            }
+
+            :not(:last-child) {
+                margin-bottom: 22px;
             }
         }
     }
 
     .contact-container {
+        @include flexCenter(column);
 
-        .contact-heading {}
+        .contact-heading {
+            font-size: map-get($mobile, "head");
+            font-weight: weight("regular");
+            margin-bottom: 20px;
+            margin-top: 50px;
+        }
 
-        .contact-icons {}
+        .contact-icons {
+            margin-bottom: 37px;
+        }
 
-        .contact-button {}
+        .contact-button {
+            width: 148px;
+            height: 41px;
+            background-color: #9C27B0;
+            color: white;
+            @include flexCenter();
+            border-radius: 5px;
+            box-shadow: 3px 7px 13px -3px rgba(0, 0, 0, 0.72);
+            margin-bottom: 50px;
+        }
     }
 }
 
 // The footer of the page. Included in every page.
 
 footer {
+    @include flexCenter(column);
+    width: 55%;
+    margin: auto;
 
-    .footer-links {}
+    .footer-links {
+        width: 100%;
+        margin-bottom: 20px;
 
-    .copyright {}
+        ul{
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            li {
+                display: inline;
+
+                a {
+                    text-decoration: none;
+                    color: #3C4858;
+                    font-size: map-get($mobile, "btn");
+                    font-weight: weight("bold");
+                    text-transform: uppercase;
+                }
+            }
+        }
+
+    }
+
+    .copyright {
+        font-size: 14px;
+        font-weight: weight("regular");
+        margin-bottom: 30px;
+    }
 }

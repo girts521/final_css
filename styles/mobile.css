@@ -178,7 +178,7 @@ main .main-text .main-heading {
 main .main-text .main-p {
   font-size: 16px;
   line-height: 21px;
-  font-weight: wight("regular");
+  font-weight: 400;
 }
 main .skills-container {
   text-align: center;
@@ -195,6 +195,144 @@ main .skills-container .skills-box :not(:last-child) {
   margin-bottom: 30px;
 }
 main .skills-container .skills-box .skill .skill-img {
+  margin-bottom: 30px;
+}
+main .skills-container .skills-box .skill .skill-subheading {
+  font-size: 20px;
+  font-weight: wight("bold");
+}
+main .skills-container .skills-box .skill .skill-text {
+  font-size: 14px;
+  font-weight: wight("small");
+  line-height: 21px;
+}
+main .projects-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  margin-left: 12px;
+  margin-right: 12px;
+}
+main .projects-container .projects-heading {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+}
+main .projects-container .project-box .project .project-img img {
+  margin-bottom: 11px;
+  width: 100%;
+}
+main .projects-container .project-box .project .project-name {
+  font-weight: 500;
+  font-size: 20px;
+}
+main .projects-container .project-box :not(:last-child) {
+  margin-bottom: 22px;
+}
+main .contact-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+main .contact-container .contact-heading {
+  font-size: 24px;
+  font-weight: 400;
+  margin-bottom: 20px;
+  margin-top: 50px;
+}
+main .contact-container .contact-icons {
+  margin-bottom: 37px;
+}
+main .contact-container .contact-button {
+  width: 148px;
+  height: 41px;
+  background-color: #9C27B0;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border-radius: 5px;
+  -webkit-box-shadow: 3px 7px 13px -3px rgba(0, 0, 0, 0.72);
+          box-shadow: 3px 7px 13px -3px rgba(0, 0, 0, 0.72);
+  margin-bottom: 50px;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+  margin: auto;
+}
+footer .footer-links {
+  width: 100%;
+  margin-bottom: 20px;
+}
+footer .footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+footer .footer-links ul li {
+  display: inline;
+}
+footer .footer-links ul li a {
+  text-decoration: none;
+  color: #3C4858;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+footer .copyright {
+  font-size: 14px;
+  font-weight: 400;
   margin-bottom: 30px;
 }
 

@@ -1,8 +1,15 @@
-$font-weights: ( "regular" : 400, "medium": 500);  font-weight: map-get($font-weights, bold);
-@function weight($weight-name) { @return map-get($font-weights, $weight-name);}
+$font-weights: ( "regular" : 400, "medium": 500); 
+ font-weight: map-get($font-weights, bold);
+
+@function weight($weight-name) { 
+    @return map-get($font-weights, $weight-name);
+}
+
 To use mixin: @include mixinname;
 @mixin flexcenter {display:flex,}
 mixins can take arguments like func
+
+
 creating light and dark theme!!
 ===========================
 @mixin theme($light-theme: true) {

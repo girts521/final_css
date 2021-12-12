@@ -26,6 +26,6 @@ burger.addEventListener('click', () => {
         nav.removeAttribute('style', 'opacity:1;')
     } else {
         navLinks.setAttribute('style', 'display: flex; flex-direction: column;')
-        nav.setAttribute('style', 'opacity:0.9; transition:0.4s;')
+        nav.setAttribute('style', 'background-color: rgba(5, 3, 3, 0.9); transition:0.4s;')
     }
 })

@@ -32,7 +32,7 @@ header {
         .heading-text {
             font-size: map-get($mobile, "p" );
             font-weight: weight("regular");
-            line-height: map-get($mobile, "lineHeightP");;
+            line-height: map-get($mobile, "lineHeightP");
         }
 
         .heading-button {
@@ -158,10 +158,10 @@ main {
             .project {
 
                 .project-img {
-                    img {
+                    
                         margin-bottom: 11px;
                         width: 100%;
-                    }
+                    
                 }
 
                 .project-name {
@@ -204,39 +204,8 @@ main {
 }
 
 // The footer of the page. Included in every page.
+@import "./parts/footer.scss";
 
-footer {
-    @include flexCenter(column);
-    width: 55%;
-    margin: auto;
-
-    .footer-links {
-        width: 100%;
-        margin-bottom: 20px;
-
-        ul{
-            display: flex;
-            flex-direction: row;
-            justify-content: space-between;
-
-            li {
-                display: inline;
-
-                a {
-                    text-decoration: none;
-                    color: #3C4858;
-                    font-size: map-get($mobile, "btn");
-                    font-weight: weight("bold");
-                    text-transform: uppercase;
-                }
-            }
-        }
-
-    }
-
-    .copyright {
-        font-size: 14px;
-        font-weight: weight("regular");
-        margin-bottom: 30px;
-    }
-}
+// Tabled and pc views 
+@import "./tablet.scss";
+@import "./desktop.scss"

@@ -1,5 +1,3 @@
-@import "./includes/mixins";
-@import "./includes/variables";
 
 footer {
     @include flexCenter(column);

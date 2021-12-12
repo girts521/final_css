@@ -1,0 +1,44 @@
+@import "../includes/mixins";
+@import "../includes/variables";
+@import "../parts/nav.scss";
+
+
+body {
+    font-family: Roboto;
+}
+
+header {
+    height: 380px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../images/page-header.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.wrapper {
+    background-color: #E5E5E5;
+
+    main {
+
+
+        .container {
+            background-color: white !important;
+            width: 90vw;
+            height: 768px;
+            // margin: auto;
+            position: absolute;
+            left: 5.65%;
+            right: 5.65%;
+            top: 26.46%;
+            bottom: 11.95%;
+            margin-bottom: 30px;
+            border-bottom-left-radius: 5px;
+            border-bottom-right-radius: 5px;
+            box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
+
+            h1 {
+                padding-top: 50px;
+            }
+        }
+    }
+}

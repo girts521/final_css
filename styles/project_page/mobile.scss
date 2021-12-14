@@ -19,26 +19,88 @@ header {
     background-color: #E5E5E5;
 
     main {
-
+        height: 718px;
 
         .container {
             background-color: white !important;
             width: 90vw;
-            height: 768px;
+            min-height: 768px;
+            max-height: 1153px;
             // margin: auto;
             position: absolute;
             left: 5.65%;
             right: 5.65%;
-            top: 26.46%;
+            top: 52%;
             bottom: 11.95%;
-            margin-bottom: 30px;
-            border-bottom-left-radius: 5px;
-            border-bottom-right-radius: 5px;
+            // margin-bottom: 30px;
+            border-radius: 5px;
             box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
 
             h1 {
                 padding-top: 50px;
+                margin-bottom: 30px;
+                text-align: center;
+                font-weight: weight(bold);
+                font-size: map-get($mobile, $key: head);
+                line-height: 28px;
+            }
+
+            .project {
+                margin-left: 12px;
+                margin-right: 12px;
+                @include flexCenter(column);
+
+                img {
+                    margin-bottom: 40px;
+                    width: 900px;
+                    height: 600px;
+                }
+
+                p {
+                    font-size: map-get($map: $mobile, $key: p);
+                    line-height: 19px;
+                    text-align: center;
+                    font-weight: weight(small);
+                    margin-bottom: 20px;
+                }
+
+                .btn {
+                    background-color: #9C27B0;
+                    font-size: 12px;
+                    line-height: 14px;
+                    font-weight: weight(regular);
+                    padding: 14px 46px;
+                    border-radius: 5px;
+                    // margin-bottom: 50px; -- why margin does not work?
+                }
+            }
+
+            .tech-stack {
+                @include flexCenter(row);
+                margin-bottom: 40px;
+
+                :not(:last-child) {
+                    margin-right: 6px;
+                }
+
+                .tech {
+                    background-color: #9C27B0;
+                    color: white;
+                    font-size: 10px;
+                    line-height: 11px;
+                    font-weight: weight(bold);
+                    border-radius: 15px;
+                    padding: 5px 11px;
+                }
+
             }
         }
+    }
+
+    // The footer of the page. Included in every page.
+    @import "../parts/footer.scss";
+
+    footer{
+        margin-top: 30px;
     }
 }

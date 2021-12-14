@@ -115,23 +115,161 @@ header {
 .wrapper {
   background-color: #E5E5E5;
 }
+.wrapper main {
+  height: 718px;
+}
 .wrapper main .container {
   background-color: white !important;
   width: 90vw;
-  height: 768px;
+  min-height: 768px;
+  max-height: 1153px;
   position: absolute;
   left: 5.65%;
   right: 5.65%;
-  top: 26.46%;
+  top: 52%;
   bottom: 11.95%;
-  margin-bottom: 30px;
-  border-bottom-left-radius: 5px;
-  border-bottom-right-radius: 5px;
+  border-radius: 5px;
   -webkit-box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
           box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
 }
 .wrapper main .container h1 {
   padding-top: 50px;
+  margin-bottom: 30px;
+  text-align: center;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 28px;
+}
+.wrapper main .container .project {
+  margin-left: 12px;
+  margin-right: 12px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+.wrapper main .container .project img {
+  margin-bottom: 40px;
+  width: 900px;
+  height: 600px;
+}
+.wrapper main .container .project p {
+  font-size: 16px;
+  line-height: 19px;
+  text-align: center;
+  font-weight: 300;
+  margin-bottom: 20px;
+}
+.wrapper main .container .project .btn {
+  background-color: #9C27B0;
+  font-size: 12px;
+  line-height: 14px;
+  font-weight: 400;
+  padding: 14px 46px;
+  border-radius: 5px;
+}
+.wrapper main .container .tech-stack {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  margin-bottom: 40px;
+}
+.wrapper main .container .tech-stack :not(:last-child) {
+  margin-right: 6px;
+}
+.wrapper main .container .tech-stack .tech {
+  background-color: #9C27B0;
+  color: white;
+  font-size: 10px;
+  line-height: 11px;
+  font-weight: 500;
+  border-radius: 15px;
+  padding: 5px 11px;
+}
+.wrapper footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  width: 55%;
+  margin: auto;
+}
+.wrapper footer .footer-links {
+  width: 100%;
+  margin-bottom: 20px;
+}
+.wrapper footer .footer-links ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+.wrapper footer .footer-links ul li {
+  display: inline;
+}
+.wrapper footer .footer-links ul li a {
+  text-decoration: none;
+  color: #3C4858;
+  font-size: 12px;
+  font-weight: 500;
+  text-transform: uppercase;
+}
+.wrapper footer .copyright {
+  font-size: 14px;
+  font-weight: 400;
+  margin-bottom: 30px;
+}
+@media screen and (min-width: 768px) {
+  .wrapper footer {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    width: 80vw;
+  }
+  .wrapper footer .footer-links {
+    max-width: 30%;
+  }
+}
+.wrapper footer {
+  margin-top: 30px;
 }
 
 /*# sourceMappingURL=mobile.css.map */

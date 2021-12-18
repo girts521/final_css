@@ -9,8 +9,18 @@ window.addEventListener('load', () => {
     } else {
         navLinks.removeAttribute('id', 'navLinks')
     }
-    console.log("hello")
 });
+
+document.addEventListener('scroll', () => {
+    if (window.innerWidth > 1439){
+        if(window.scrollY > 200){
+            nav.setAttribute('style', 'background-color: rgba(5, 3, 3, 0.4);')
+        }
+        if(window.scrollY < 200){
+            nav.removeAttribute('style', 'background-color: rgba(5, 3, 3, 0.4);')
+        }
+    }
+})
 
 window.addEventListener('resize', () => {
     if (window.innerWidth < 768) {

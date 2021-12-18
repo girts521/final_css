@@ -9,40 +9,44 @@ body {
 
 header {
     height: 380px;
+    // width: 100vw;
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.5)), url(../../images/page-header.png);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
+    position: relative;
+    // z-index: 1;
 }
 
 .wrapper {
     background-color: #E5E5E5;
 
+
     main {
-        height: 718px;
+        @include flexCenter(column);
+        // width: 100%;
 
         .container {
-            background-color: white !important;
+            position: relative;
+            margin-top: -50px;
+            z-index: 2;
+            background-color: white;
             width: 90vw;
-            min-height: 768px;
-            max-height: 1153px;
-            // margin: auto;
-            position: absolute;
-            left: 5.65%;
-            right: 5.65%;
-            top: 52%;
-            bottom: 11.95%;
-            // margin-bottom: 30px;
             border-radius: 5px;
             box-shadow: 3px 7px 22px 1px rgba(0, 0, 0, 0.54);
 
             h1 {
-                padding-top: 50px;
+                margin-top: 50px;
                 margin-bottom: 30px;
                 text-align: center;
                 font-weight: weight(bold);
                 font-size: map-get($mobile, $key: head);
                 line-height: 28px;
+
+                @media screen and(min-width:768px) {
+                    font-size: 36px;
+                    line-height: 48px;
+                }
             }
 
             .project {
@@ -52,8 +56,8 @@ header {
 
                 img {
                     margin-bottom: 40px;
-                    width: 900px;
-                    height: 600px;
+                    width: 100%;
+                    // height: 600px;
                 }
 
                 p {
@@ -62,6 +66,11 @@ header {
                     text-align: center;
                     font-weight: weight(small);
                     margin-bottom: 20px;
+
+                    @media screen and(min-width:768px) {
+                        font-size: map-get($map: $tablet, $key: p);
+                        line-height: 21px;
+                    }
                 }
 
                 .btn {
@@ -69,9 +78,11 @@ header {
                     font-size: 12px;
                     line-height: 14px;
                     font-weight: weight(regular);
+                    color: white;
                     padding: 14px 46px;
                     border-radius: 5px;
-                    // margin-bottom: 50px; -- why margin does not work?
+                    margin-bottom: 50px;
+                    box-shadow: 3px 5px 18px -5px #000000;
                 }
             }
 
@@ -104,3 +115,5 @@ header {
         margin-top: 30px;
     }
 }
+
+@import "./desktop.scss"

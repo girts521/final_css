@@ -48,11 +48,23 @@ burger.addEventListener('click', () => {
 
 //Form submittion
 
-// btn.addEventListener('click', (event) => {
-//     console.log('click')
-//     event.preventDefault()
-//     console.log(name.value, email.value, text.value)
+btn.addEventListener('click', (event) => {
+    console.log('click')
+    event.preventDefault()
+    const data = {
+       name: name.value,
+       email: email.value, 
+       text: text.value
+    }
+    console.log(data)
 
-// // axios.post('http://localhost:3001/data')
+axios.post('http://3.64.61.82:5000/data', {data})
+// axios.post('http://localhost:5000/data', {data})
+.then(res => {
+    console.log(res.data.msg)
+})
+.catch(e => {
+    console.log(e)
+})
 
-// })
+})
